@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #121212;
+  --color-card: #1f1f1f;
+  --color-accent: #a06cd5;
+
+  --color-bg-light: #f2f0f6;
+  --color-card-light: #ffffff;
+  --color-accent-light: #a06cd5;
+  --color-text-light: #1a1a1a;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant light (&:where(.light, .light *));
+
+body {
+  @apply transition-colors duration-300;
+}
+
+/* Dark theme */
+.dark {
+  --bg: var(--color-bg);
+  --card: var(--color-card);
+  --accent: var(--color-accent);
+  --text: #ffffff;
+}
+
+/* Light theme */
+.light {
+  --bg: var(--color-bg-light);
+  --card: var(--color-card-light);
+  --accent: var(--color-accent);
+  --text: var(--color-text-light);
+}
+
+.light .bg-card {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+
+.light, .dark {
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+
+html, body {
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.bg-card {
+  background-color: var(--card);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.bg-accent {
+  background-color: var(--accent);
+}
