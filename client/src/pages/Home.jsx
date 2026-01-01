@@ -94,7 +94,7 @@ export default function Home() {
       {/* 🧾 FOOTER */}
       <footer className="text-center py-6 bg-[#F3F2F7] dark:bg-[#0B0B0B] text-[#5A5A5A] dark:text-gray-500 text-sm border-t border-[#e2e2e2] dark:border-text-light transition-colors duration-300">
         <p>
-          © 2025 <span className="text-[#A06CD5] font-semibold">CineCritique</span> — A full-stack project by Samaira Arora & Naina.
+          © 2025 <span className="text-[#A06CD5] font-semibold">CineCritique</span> — By Samaira Arora & Naina.
         </p>
       </footer>
     </div>
