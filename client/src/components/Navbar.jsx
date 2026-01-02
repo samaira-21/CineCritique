@@ -25,7 +25,7 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      {/* 🎬 Logo */}
+      {/* Logo */}
       <Link
         to="/"
         className="text-2xl font-bold text-[#A06CD5] hover:opacity-90 transition"
@@ -33,7 +33,7 @@ export default function Navbar() {
         CineCritique 🎬
       </Link>
 
-      {/* 🔗 Navigation links */}
+      {/* Navigation links */}
       <div className="flex items-center space-x-8 font-medium text-[#1A1A1A] dark:text-gray-300">
         <Link
           to="/"

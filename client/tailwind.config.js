@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        accent: "#e50914", // Netflix red
-        card: "#1f1f1f",   // card background
-        bg: "#121212",     // page background
-      },
+        accent: "#e50914",
+        card: "#1f1f1f",   
+        bg: "#121212",     
     },
   },
   plugins: [],
-};
+}
+}

@@ -28,7 +28,7 @@ export default function ReviewForm({ imdbID, onReviewAdded }) {
 
   return (
     <form onSubmit={handleSubmit} className="mb-4 transition-colors duration-300">
-      {/* ✏️ Review Textarea */}
+      {/* Review Textarea */}
       <textarea
         value={review}
         onChange={(e) => setReview(e.target.value)}
@@ -44,7 +44,7 @@ export default function ReviewForm({ imdbID, onReviewAdded }) {
         required
       />
 
-      {/* ⭐ Rating + Submit Button */}
+      {/* Rating + Submit Button */}
       <div className="flex justify-between items-center">
         <select
           value={rating}
